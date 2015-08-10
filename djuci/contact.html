@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+   <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+  <header>
+    <ul id="utilnav" class="container">
+      <li><i class="fa fa-map-marker"></i>4578 Marmora Road, Glasgow D0489GR</li>
+      <li><i class="fa fa-mobile"></i>800-2345-6789</li>
+      <li><i class="fa fa-envelope"></i>info@demolink.org</li>
+      <li><i class="fa fa-twitter"></i></li>
+      <li><i class="fa fa-facebook"></i></li>
+    </ul>
+    <nav>
+    
+      <ul class="container">
+        <li><a href="#" class="brand"><img src="img/img/logo.png" height="87" width="186" alt=""></a></li>
+        <li><a href="index.html">Home</a></li>
+       <li class="drop">About
+          <ul id="dropdown">
+            <li><a href="about.html">Testimonials</a></li>
+            <li><a href="Archives.html">Archieves</a></li>
+            <li>FAQs</li>
+          </ul>
+        </li>
+       <li class="drop"><a href="index.html#images">Portfolio</a>
+          <ul id="dropdown">
+            <li><a href="portfolio.html">portfolio 1</a></li>
+            <li>portfolio 2</li>
+            <li>portfolio 3</li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div class="top container">
+        <p>Contact</p>
+      </div>
+      <div id="test" class="container">
+        <ul>
+          <li>Home</li>
+          <li>//</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+    <main id="contacts">
+      <section id="contact" class="container">
+          <div>
+            <h2>Contact info</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+
+            <address>
+              <ul>
+                <li>The Company Name Inc.</li>
+                <li>9870 St Vincent Place,
+                Glasgow, DC 45 Fr 45.</li>
+                <li>Telephone: +1 800 603 6035</li>
+                <li>FAX: +1 800 889 9898</li>
+                <link rel="stylesheet" href="#">E-mail: mail@demolink.org
+              </ul>
+            </address>
+          </div>
+       <form action="">
+            <h2>Contact Form</h2>
+            <input type="text" placeholder="Name:">
+            <input type="text" placeholder="Email:">
+            <input type="text" placeholder="Phone:">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message:"></textarea>
+        </form>
+
+
+      </section>
+    </main>
+
+      <section id="last" class="container">
+  <div>
+
+    <h2>About</h2>
+    <ul>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+      </ul>
+  </div>
+  <div>
+    <h2>Services</h2>
+      <ul>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+      </ul>
+  </div>
+  
+  
+  <div id="map-canvas"></div>
+  </section>
+
+  <footer class="container">
+    <p>Djuci &copy; 2015 Privacy Policy</p>
+  </footer>
+
+</body>
+</html>

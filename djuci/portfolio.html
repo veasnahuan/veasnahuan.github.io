@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+   <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+  <header>
+    <ul id="utilnav" class="container">
+      <li><i class="fa fa-map-marker"></i>4578 Marmora Road, Glasgow D0489GR</li>
+      <li><i class="fa fa-mobile"></i>800-2345-6789</li>
+      <li><i class="fa fa-envelope"></i>info@demolink.org</li>
+      <li><i class="fa fa-twitter"></i></li>
+      <li><i class="fa fa-facebook"></i></li>
+    </ul>
+    <nav>
+    
+      <ul class="container">
+        <li><a href="#" class="brand"><img src="img/img/logo.png" height="87" width="186" alt=""></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="drop">About
+          <ul id="dropdown">
+            <li><a href="about.html">Testimonials</a></li>
+            <li><a href="Archives.html">Archieves</a></li>
+            <li>FAQs</li>
+          </ul>
+        </li>
+        <li class="drop"><a href="index.html#images">Portfolio</a>
+          <ul id="dropdown">
+            <li><a href="portfolio.html">portfolio 1</a></li>
+            <li>portfolio 2</li>
+            <li>portfolio 3</li>
+          </ul>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+      <div class="top container">
+        <p>Portfolio</p>
+      </div>
+      <div id="test" class="container">
+        <ul>
+          <li>Home</li>
+          <li>//</li>
+          <li>Portfolio</li>
+          <li>//</li>
+          <li>Portfolio 2</li>
+        </ul>
+      </div>
+  <main id="main2" class="container">
+
+  <section>
+        <ul id="nav2">
+          <li><a href="#">show all</a></li>
+          <li><a href="#">category 1</a></li>
+          <li><a href="#">category 2</a></li>
+          <li><a href="#">category 3</a></li>
+        </ul>
+    </section>
+
+   <div id="portimg">
+     <div>
+       <img src="img/img/c-600x380.jpg" height="380" width="600" alt="">
+      <h2>Sodales orci et</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…</p>
+     </div>
+     <div>
+       <img src="img/img/d-600x380.jpg" height="380" width="600" alt="">
+       <h2>In faucibus risus</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscingelit.  Sed blandit massa vel mauris…</p>
+     </div>
+  
+     <div>
+       <img src="img/img/a-600x380.jpg" height="380" width="600" alt="">
+      <h2>Sodales orci et</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…</p>
+     </div>
+     <div>
+       <img src="img/img/b-600x380.jpg" height="380" width="600" alt="">
+      <h2>In faucibus risus</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscingelit.  Sed blandit massa vel mauris…</p>
+     </div>
+     <div>
+       <img src="img/img/g-600x380.jpg" alt="">
+      <h2>Sodales orci et</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…</p>
+     </div>
+     <div>
+       <img src="img/img/f-600x380.jpg" alt="">
+       <h2>In faucibus risus</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscingelit.  Sed blandit massa vel mauris…</p>
+     </div>
+     <div>
+       <img src="img/img/e-600x380.jpg" alt="">
+      <h2>Sodales orci et</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…</p>
+     </div>
+     <div>
+       <img src="img/img/Depositphotos_11184173_original-Copy-600x380.jpg" height="380" width="600" alt="">
+       <h2>In faucibus risus</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscingelit.  Sed blandit massa vel mauris…</p>
+     </div>
+  
+    
+  </main>
+<section id="last" class="container">
+  <div>
+    <h2>About</h2>
+    <ul>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+      </ul>
+  </div>
+  <div>
+    <h2>Services</h2>
+      <ul>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+        <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+      </ul>
+  </div>
+  
+  
+  <div id="map-canvas"></div>
+  </section>
+
+  <footer class="container">
+    <p>Djuci &copy; 2015 Privacy Policy</p>
+  </footer>
+
+</body>
+</html>
